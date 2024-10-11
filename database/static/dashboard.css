@@ -1,0 +1,246 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #2c3e50;
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    color: #ecf0f1;
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    background-color: #34495e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.sidebar ul li a.active, 
+.sidebar ul li a:hover {
+    background-color: #2980b9;
+}
+
+/* Content Styles */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ecf0f1;
+    overflow-y: auto;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+/* Change User Form Styles */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input[type="text"], 
+form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for image in table */
+table img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+form button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #3498db;
+}
+
+form p {
+    margin-top: 20px;
+    text-align: center;
+    color: #e74c3c;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, 
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #34495e;
+    color: white;
+}
+
+table a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Filters Styles */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 10px;
+}
+
+.filters input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Photo Page Styles */
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 1000px;  /* Kurangi ukuran maksimal */
+    background-color: #f9f9f9;  /* Warna background kotak */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-img {
+    max-width: 100%; /* Mengatur agar gambar sesuai dengan ukuran container */
+    max-height: 400px;
+    object-fit: contain; /* Jaga agar gambar tetap proporsional */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff; /* Background putih untuk gambar */
+    padding: 10px;  /* Berikan sedikit padding di sekitar gambar */
+}
+
+.photo-details {
+    width: 70%;
+    text-align: left;
+    margin-top: 20px;
+    background-color: #ffffff; /* Warna background kotak tulisan */
+    padding: 15px;
+    border-radius: 10px; /* Berikan border-radius untuk kotak */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk kotak */
+}
+
+.photo-details p {
+    font-size: 16px; /* Kecilkan ukuran font */
+    margin: 10px 0; /* Berikan margin yang lebih proporsional */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Pastikan teks vertikal di tengah */
+}
+
+.photo-details p img {
+    max-width: 100px; /* Kurangi ukuran gambar license plate */
+    height: auto;
+    margin-left: 10px;
+    border: 1px solid #ddd; /* Berikan border tipis untuk gambar */
+}
+
+.btn-back {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: fit-content;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}

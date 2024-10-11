@@ -1,0 +1,8 @@
+For building the installer Double Click:
+- build.bat (for build "main.exe")
+- build_server.bat (for build "server.exe")
+- build_reset (for build "reset.exe")
+
+copy the installer(.exe) from folder "dist" into the main directory
+
+Creator: abdurrahmannurhakim@gmail.com
