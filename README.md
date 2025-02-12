@@ -40,3 +40,44 @@ This project leverages **YOLO (You Only Look Once)** to detect various traffic v
 
 5. **Troubleshooting**:
    - **File Size Limitations**: Certain files are too large to host on GitHub; hence, the complete package is available only through the Google Drive link above.
+
+## Running Instructions
+
+### 1. Running `main.exe`
+
+#### Displaying IP Camera
+```
+https://192.168.1.100:80/video
+```
+
+#### Displaying Hikvision Camera (RTSP)
+```
+rtsp://admin:12345@192.168.1.100:554/h264/ch1/main/av_stream
+```
+
+#### Running Default Video
+```
+./cctv example/5.mp4
+```
+- Press **Connect to Camera** to start.
+- Press again to **stop**.
+
+#### Setting Custom Video
+1. **Remove all areas**: Press **Undo Area** until all areas are cleared.
+2. **Create new monitoring areas**:
+   - **POINT_A** → Marks a vehicle’s position from **POINT_A** to **POINT_B** for speed measurement.
+   - **POINT_B** → Marks a vehicle’s position from **POINT_B** to **POINT_A** for speed measurement.
+   - **LEFT** → Defines the left lane to detect wrong-way violations.
+   - **RIGHT** → Defines the right lane to detect wrong-way violations.
+
+📷 **Example Area Setup:**
+![Example Area Setup](https://drive.google.com/uc?id=1lrbDVIgVlaDQztWEwS24pkGwOQpgqnUP)
+
+---
+
+### 2. Running `server.exe`
+- **Username**: `admin`
+- **Password**: `admin`
+
+📌 **Note**: Ensure that `server.exe` is running for web-based monitoring and logging of detected violations.
+
