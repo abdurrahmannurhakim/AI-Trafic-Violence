@@ -65,12 +65,12 @@ This directory includes all necessary files and is ready to run directly.
 
 #### 📡 Displaying IP Camera
 ```bash
-https://192.168.1.100:80/video
+https://<IP_ADDRESS>:<PORT>/video
 ```
 
 #### 📡 Displaying Hikvision Camera (RTSP)
 ```bash
-rtsp://admin:12345@192.168.1.100:554/h264/ch1/main/av_stream
+rtsp://<USERNAME>:<PASSWORD>@<IP_ADDRESS>:<PORT>/<STREAM_PATH>
 ```
 
 #### ▶ Running Default Video
