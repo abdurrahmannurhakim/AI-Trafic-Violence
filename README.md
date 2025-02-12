@@ -65,7 +65,7 @@ This directory includes all necessary files and is ready to run directly.
 
 #### 📡 Displaying IP Camera
 ```bash
-https://<IP_ADDRESS>:<PORT>/video
+https://<IP_ADDRESS>:<PORT>/<STREAM_PATH>
 ```
 
 #### 📡 Displaying Hikvision Camera (RTSP)
