@@ -1,6 +1,6 @@
-# YOLO for Traffic Violence Detection 🚦
+# 🚦 YOLO for Traffic Violence Detection
 
-This project leverages **YOLO (You Only Look Once)** to detect various traffic violations in real-time, aimed at improving road safety and compliance. The software identifies and tracks:
+This project leverages **YOLO (You Only Look Once)** to detect various traffic violations in real-time, improving road safety and compliance. The software identifies and tracks:
 
 - **Overtaking** 🚗
 - **Overspeeding** 🚨
@@ -8,76 +8,93 @@ This project leverages **YOLO (You Only Look Once)** to detect various traffic v
 - **No Helmet Use** 🏍️
 - **No Seatbelt Use** 🚗
 
-## Features
-- **Real-time Detection**: Instant identification of traffic violations using YOLOv8 models.
-- **Safety Distance Calculation**: The system calculates the safety distance between vehicles to prevent accidents.
-- **Web-Based Monitoring**: A secure, user-friendly local web interface to view and monitor the results.
-- **Security System**: Integrated with security protocols to ensure data protection and reliable monitoring.
+## ✨ Features
 
-## Technologies Used
-- **YOLOv8** for object detection and tracking
-- **Flask** for the web interface
-- **SQLite3** for local database management
-- **OpenCV** for image processing
-- **Python** for backend development
+✔ **Real-time Detection**: Instantly identifies traffic violations using YOLOv8 models.  
+✔ **Safety Distance Calculation**: Measures vehicle distances to prevent accidents.  
+✔ **Web-Based Monitoring**: Secure and user-friendly local web interface.  
+✔ **Security System**: Ensures data protection and reliable monitoring.  
 
-## Installation & Setup Instructions
+---
 
-1. **Download Full Directory**:
-   - Download the full directory containing the built `.exe` files and all dependencies from Google Drive: [Download Directory](https://drive.google.com/file/d/1zEBnQUcYz4C9ExlL_4W57DHypXcI55RV/view?usp=drivesdk)
-   - This directory includes all necessary files and is ready to run directly.
+## 🛠 Technologies Used
 
-2. **Running the Application**:
-   - **Main Code**: Run `main.exe` to execute the primary traffic violation detection system.
-   - **Web Server Monitoring**: Run `server.exe` to initiate the local web interface for real-time monitoring of traffic violations.
+| Technology  | Purpose                          |
+|------------|----------------------------------|
+| **YOLOv8** | Object detection & tracking     |
+| **Flask**  | Web interface backend           |
+| **SQLite3**| Local database management       |
+| **OpenCV** | Image processing                |
+| **Python** | Programming Language          |
 
-3. **Important Note**:
-   - This GitHub repository only contains the source code and does not include the built `.exe` files. To run the application directly, please download the full directory from Google Drive, as mentioned above.
+---
 
-4. **System Requirements**:
-   - **VGA**: A graphics card with 8GB or more VRAM is recommended.
-   - **RAM**: A minimum of 16GB RAM is suggested for optimal performance.
+## 🚀 Installation & Setup
 
-5. **Troubleshooting**:
-   - **File Size Limitations**: Certain files are too large to host on GitHub; hence, the complete package is available only through the Google Drive link above.
+### 1️⃣ **Download Full Directory**
+📥 Download the full directory containing `.exe` files and dependencies from Google Drive:
 
-## Running Instructions
+[🔗 Download Directory](https://drive.google.com/file/d/1zEBnQUcYz4C9ExlL_4W57DHypXcI55RV/view?usp=drivesdk)
 
-### 1. Running `main.exe`
+This directory includes all necessary files and is ready to run directly.
 
-#### Displaying IP Camera
-```
+### 2️⃣ **Running the Application**
+
+| File         | Function                                  |
+|-------------|-------------------------------------------|
+| `main.exe`  | Runs the traffic violation detection system |
+| `server.exe`| Starts the local web interface for monitoring |
+
+### 3️⃣ **Important Notes**
+📌 The GitHub repository only contains the source code and **does not** include `.exe` files. Download the full package from Google Drive.
+
+### 4️⃣ **System Requirements**
+
+✅ **VGA**: Graphics card with **8GB VRAM** or more recommended.  
+✅ **RAM**: Minimum **16GB RAM** suggested for optimal performance.  
+
+### 5️⃣ **Troubleshooting**
+
+⚠ **File Size Limitations**: Certain files are too large for GitHub; the full package is available via Google Drive.
+
+---
+
+## 🎬 Running Instructions
+
+### 🔹 Running `main.exe`
+
+#### 📡 Displaying IP Camera
+```bash
 https://192.168.1.100:80/video
 ```
 
-#### Displaying Hikvision Camera (RTSP)
-```
+#### 📡 Displaying Hikvision Camera (RTSP)
+```bash
 rtsp://admin:12345@192.168.1.100:554/h264/ch1/main/av_stream
 ```
 
-#### Running Default Video
-```
+#### ▶ Running Default Video
+```bash
 ./cctv example/5.mp4
 ```
 - Press **Connect to Camera** to start.
 - Press again to **stop**.
 
-#### Setting Custom Video
-1. **Remove all areas**: Press **Undo Area** until all areas are cleared.
+#### 🎯 Setting Custom Video
+1. **Remove all areas**: Press **Undo Area** until cleared.
 2. **Create new monitoring areas**:
-   - **POINT_A** → Marks a vehicle’s position from **POINT_A** to **POINT_B** for speed measurement.
-   - **POINT_B** → Marks a vehicle’s position from **POINT_B** to **POINT_A** for speed measurement.
-   - **LEFT** → Defines the left lane to detect wrong-way violations.
-   - **RIGHT** → Defines the right lane to detect wrong-way violations.
+   - **POINT_A** → Marks vehicle’s start position.
+   - **POINT_B** → Marks vehicle’s end position for speed measurement.
+   - **LEFT** → Defines left lane for wrong-way detection.
+   - **RIGHT** → Defines right lane for wrong-way detection.
 
-📷 **Example Area Setup:**
+📷 **Example Area Setup:**  
 ![Example Area Setup](https://drive.google.com/uc?id=1lrbDVIgVlaDQztWEwS24pkGwOQpgqnUP)
 
 ---
 
-### 2. Running `server.exe`
-- **Username**: `admin`
+### 🔹 Running `server.exe`
+- **Username**: `admin`  
 - **Password**: `admin`
 
-📌 **Note**: Ensure that `server.exe` is running for web-based monitoring and logging of detected violations.
-
+📌 **Ensure** `server.exe` is running for web-based monitoring and logging of detected violations.
